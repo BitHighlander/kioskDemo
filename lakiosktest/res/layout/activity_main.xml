@@ -13,16 +13,22 @@
         android:layout_height="wrap_content"
         android:text="Press button to show text input" />
 
-    <EditText
+    
+   <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:ems="10" >
+        android:hint="password"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="login"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+    	android:singleLine="true" />
+    
+ 
 
-        <requestFocus />
-    </EditText>
+     
 
     <Button
         android:id="@+id/button1"
