@@ -202,7 +202,7 @@ private void startSessionsActivity() {
 					//Start Scanning Page
 					Toast.makeText(getApplicationContext(), "Button Pressed", Toast.LENGTH_LONG).show();
 					//startBuyerSelectionActivity();
-					startSellingActivity();
+					startBuyerSelectionActivity();
 				}
 		});
     }

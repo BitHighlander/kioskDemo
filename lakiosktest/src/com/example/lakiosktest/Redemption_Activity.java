@@ -18,7 +18,7 @@ public class Redemption_Activity extends Activity {
 //***************
 //	Things
 //***************	
-private Button button1;
+private Button doneButton;
 private EditText input1;
 private Button startBitcoinButton;
 private TextView priceBitcoinView;
@@ -83,7 +83,7 @@ private void startSessionsActivity() {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_screen);
+        setContentView(R.layout.activity_redemption_blockchain);
 
         //Kiosk Mode
         View mDecorView = getWindow().getDecorView();
@@ -95,7 +95,28 @@ private void startSessionsActivity() {
       	      | View.SYSTEM_UI_FLAG_FULLSCREEN
       	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
-        
+        doneButton = (Button) findViewById(R.id.done_button);
+  		
+
+  		
+  		
+  //******* when first set		
+          //input1 = (EditText) findViewById(R.id.editText1);
+          //input1.setVisibility(View.INVISIBLE);
+  		
+  		
+  //****** Buttons		
+        doneButton.setOnClickListener(new OnClickListener() {
+  				@Override
+  				public void onClick(View v) {
+  					//Start Scanning Page
+  					Toast.makeText(getApplicationContext(), "Button Pressed", Toast.LENGTH_LONG).show();
+  					//startBuyerSelectionActivity();
+  					
+  					finish();
+  					
+  				}
+  		});       
 
         
 

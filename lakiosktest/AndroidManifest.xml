@@ -63,6 +63,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.lakiosktest.MainActivity" />
         </activity>
+         <activity
+            android:name="com.example.lakiosktest.Redemption_Activity"
+            android:label="@string/title_activity_buy_qr_"
+            android:parentActivityName="com.example.lakiosktest.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lakiosktest.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
