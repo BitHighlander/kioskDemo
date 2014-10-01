@@ -33,6 +33,12 @@ public static final int REDEEM_ACTIVITY = Menu.FIRST + 3;
 //  Tools
 //***************
 
+/*
+ * Inventory
+ * 
+ * Navigation Calls
+ */
+
 private void startLoginActivity() {
 	Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
 	startActivity(intent);
@@ -77,9 +83,9 @@ private void startSessionsActivity() {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_buyer_selection);
 
-        super.onResume();
+        //Kiosk Mode
         View mDecorView = getWindow().getDecorView();
         mDecorView.setSystemUiVisibility(
       	        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -90,22 +96,9 @@ private void startSessionsActivity() {
       	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
         
-		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);
-		startBitcoinButton = (Button) findViewById(R.id.start_bitcoin_button);
+
         
-        //input1 = (EditText) findViewById(R.id.editText1);
-        //input1.setVisibility(View.INVISIBLE);
-		priceBitcoinView.setText("Please Wait");
-		      
-		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
-		      
-	    startBitcoinButton.setOnClickListener(new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					//Start Scanning Page
-					startBuyerInfoActivity();
-				}
-		});
+
     }
 
 
@@ -120,22 +113,7 @@ private void startSessionsActivity() {
        	      | View.SYSTEM_UI_FLAG_FULLSCREEN
        	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
          
- 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);
- 		startBitcoinButton = (Button) findViewById(R.id.start_bitcoin_button);
-         
-         //input1 = (EditText) findViewById(R.id.editText1);
-         //input1.setVisibility(View.INVISIBLE);
- 		priceBitcoinView.setText("Please Wait");
- 		      
- 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
- 		      
- 	    startBitcoinButton.setOnClickListener(new OnClickListener() {
- 				@Override
- 				public void onClick(View v) {
- 					//Start Scanning Page
- 				
- 				}
- 		});
+
     }
 
     @Override

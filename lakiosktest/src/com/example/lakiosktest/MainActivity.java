@@ -8,9 +8,13 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.inputmethodservice.Keyboard;
+import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,11 +37,58 @@ private static final int SELL_ACTIVITY = 0;
 public static final int BUYER_INFORMATION_ACTIVITY = Menu.FIRST + 1;
 public static final int BUY_ACTIVITY = Menu.FIRST + 2;
 public static final int REDEEM_ACTIVITY = Menu.FIRST + 3;
+private static final String TAG = "Main Activity";
+//admin click
+private int count = 0;
+private long startMillis=0;
 //***************
 
 //***************
 //  Tools
 //***************
+
+/*
+ * Inventory
+ * 
+ * Admin Launch
+ * 
+ * Dialog
+ * 
+ * Navigation Calls
+ */
+
+//10 taps admin launch
+//detect any touch event in the screen (instead of an specific view) 
+@Override
+public boolean onTouchEvent(MotionEvent event) {  
+
+    int eventaction = event.getAction();
+     if (eventaction == MotionEvent.ACTION_UP) {
+
+     //get system current milliseconds
+     long time= System.currentTimeMillis();
+
+
+     //if it is the first time, or if it has been more than 3 seconds since the first tap ( so it is like a new try), we reset everything 
+     if (startMillis==0 || (time-startMillis> 4000) ) {
+         startMillis=time;
+         count=1;
+     }
+     //it is not the first, and it has been  less than 3 seconds since the first
+     else{ //  time-startMillis< 3000   
+         count++;
+     }
+
+     if (count==10) {
+    	 	// Start login
+    	 //startLoginActivity();
+    	 startSellingActivity();
+    	 Log.d(TAG, "Admin button pressed");
+     }
+     return true;    
+    }
+    return false;
+  }
 
 //Dialogs
 private void openAlert() {
@@ -122,6 +173,7 @@ private void startSessionsActivity() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Kiosk Mode
         View mDecorView = getWindow().getDecorView();
         mDecorView.setSystemUiVisibility(
       	        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -131,17 +183,27 @@ private void startSessionsActivity() {
       	      | View.SYSTEM_UI_FLAG_FULLSCREEN
       	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
-        
+//******* Things        
 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);
 		startBitcoinButton = (Button) findViewById(R.id.start_bitcoin_button);
-        
+
+		
+		
+//******* when first set		
         //input1 = (EditText) findViewById(R.id.editText1);
         //input1.setVisibility(View.INVISIBLE);
 		priceBitcoinView.setText("Please Wait");
-		      
+
+//		KeyboardView kbd = new KeyboardView(getBaseContext(), null);
+//		kbd.setKeyboard(new Keyboard(this, R.xml.custom));
+//
+//		kbd.setOnKeyboardActionListener(new OnKeyboardActionListener() {
+//		    ....
+//		}
+		
+//****** Buttons		
 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
-		      
-	    startBitcoinButton.setOnClickListener(new OnClickListener() {
+		startBitcoinButton.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
 					//Start Scanning Page

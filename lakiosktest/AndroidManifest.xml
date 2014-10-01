@@ -23,21 +23,45 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cash2btc.bitcoindave.BuyerInformationActivity"
-            android:label="@string/title_activity_address"
-            android:parentActivityName="com.cash2btc.bitcoindave.MainActivity" >
+            android:name="com.example.lakiosktest.BuyScreenActivity"
+            android:label="@string/title_activity_buy_screen" 
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cash2btc.bitcoindave.MainActivity" />
+                android:value="com.example.lakiosktest.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.lakiosktest.SellScreenActivity"
+            android:label="@string/title_activity_buy_screen" 
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lakiosktest.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.lakiosktest.BuyerInformationActivity"
+            android:label="@string/title_activity_address"
+            android:parentActivityName="ccom.example.lakiosktest.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lakiosktest.MainActivity" />
         </activity>
 
          <activity
-            android:name="com.cash2btc.bitcoindave.BuyerSelectionActivity"
+            android:name="com.example.lakiosktest.BuyerSelectionActivity"
             android:label="@string/title_activity_selection"
-            android:parentActivityName="com.cash2btc.bitcoindave.MainActivity" >
+            android:parentActivityName="com.example.lakiosktest.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cash2btc.bitcoindave.MainActivity" />
+                android:value="com.example.lakiosktest.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.lakiosktest.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="com.cash2btc.bitcoindave.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lakiosktest.MainActivity" />
         </activity>
     </application>
 
