@@ -82,7 +82,7 @@ public boolean onTouchEvent(MotionEvent event) {
      if (count==10) {
     	 	// Start login
     	 //startLoginActivity();
-    	 startSellingActivity();
+    	 
     	 Log.d(TAG, "Admin button pressed");
      }
      return true;    
@@ -193,13 +193,6 @@ private void startSessionsActivity() {
         //input1 = (EditText) findViewById(R.id.editText1);
         //input1.setVisibility(View.INVISIBLE);
 		priceBitcoinView.setText("Please Wait");
-
-//		KeyboardView kbd = new KeyboardView(getBaseContext(), null);
-//		kbd.setKeyboard(new Keyboard(this, R.xml.custom));
-//
-//		kbd.setOnKeyboardActionListener(new OnKeyboardActionListener() {
-//		    ....
-//		}
 		
 //****** Buttons		
 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
@@ -208,7 +201,8 @@ private void startSessionsActivity() {
 				public void onClick(View v) {
 					//Start Scanning Page
 					Toast.makeText(getApplicationContext(), "Button Pressed", Toast.LENGTH_LONG).show();
-					startBuyerSelectionActivity();
+					//startBuyerSelectionActivity();
+					startSellingActivity();
 				}
 		});
     }
@@ -225,22 +219,22 @@ private void startSessionsActivity() {
        	      | View.SYSTEM_UI_FLAG_FULLSCREEN
        	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
          
- 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);
- 		startBitcoinButton = (Button) findViewById(R.id.start_bitcoin_button);
-         
-         //input1 = (EditText) findViewById(R.id.editText1);
-         //input1.setVisibility(View.INVISIBLE);
- 		priceBitcoinView.setText("Please Wait");
- 		      
- 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
- 		      
- 	    startBitcoinButton.setOnClickListener(new OnClickListener() {
- 				@Override
- 				public void onClick(View v) {
- 					//Start Scanning Page
- 				
- 				}
- 		});
+// 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);
+// 		startBitcoinButton = (Button) findViewById(R.id.start_bitcoin_button);
+//         
+//         //input1 = (EditText) findViewById(R.id.editText1);
+//         //input1.setVisibility(View.INVISIBLE);
+// 		priceBitcoinView.setText("Please Wait");
+// 		      
+// 		priceBitcoinView = (TextView) findViewById(R.id.bitcoin_market_price);    
+// 		      
+// 	    startBitcoinButton.setOnClickListener(new OnClickListener() {
+// 				@Override
+// 				public void onClick(View v) {
+// 					//Start Scanning Page
+// 				
+// 				}
+// 		});
     }
 
     @Override

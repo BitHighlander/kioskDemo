@@ -20,7 +20,7 @@ public class SellScreenActivity extends Activity {
 //***************	
 private Button button1;
 private EditText input1;
-private Button startBitcoinButton;
+private Button abortButton;
 private TextView priceBitcoinView;
 static final int BUYER_SELECTION_ACTIVITY = 0;
 private static final int SELL_ACTIVITY = 0;
@@ -96,10 +96,30 @@ private void startSessionsActivity() {
       	      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
         
+      //******* Things        
+      		
+      		abortButton = (Button) findViewById(R.id.abort);
 
+      		
+      		
+      //******* when first set		
+              //input1 = (EditText) findViewById(R.id.editText1);
+              //input1.setVisibility(View.INVISIBLE);
+      		
+      		
+      //****** Buttons		
+      		abortButton.setOnClickListener(new OnClickListener() {
+      				@Override
+      				public void onClick(View v) {
+      					//Start Scanning Page
+      					Toast.makeText(getApplicationContext(), "Button Pressed", Toast.LENGTH_LONG).show();
+      					//startBuyerSelectionActivity();
+      					finish();
+      				}
+      		});
+          }
         
 
-    }
 
 
     public void onResume(){

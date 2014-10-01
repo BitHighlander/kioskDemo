@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   	android:background="@drawable/background7"
+   	android:background="@drawable/background3"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -18,52 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/abort" /> 
-    
-	<TextView
-        android:id="@+id/sell_instructions"
-        style="@style/Instructions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="125dp"
-        android:hint="Select how much you want to sell (USD)" >
-    </TextView>
-
-
-
- 	<Button
- 	    android:id="@+id/showqrbutton"
- 	    android:layout_width="wrap_content"
- 	    android:layout_height="wrap_content"
-
- 	    android:text="Update QR Code" />
- 	 <TextView
- 	    android:id="@+id/step2"
- 	    style="@style/Label"
- 	    android:layout_width="wrap_content"
- 	    android:layout_height="wrap_content"
- 	    android:layout_centerHorizontal="true"
- 	    android:layout_below="@+id/myautocomplete"
- 	    android:layout_marginTop="30dp"
- 	    android:text="Send Bitcoin" />
- 	<ImageButton
- 	    android:id="@+id/qr_button"
- 	    style="@style/Button"
- 	    android:layout_width="250dp"
- 	    android:layout_height="250dp"
- 	    android:layout_marginTop="10dp"
- 	    android:layout_below="@+id/step2"
- 	    android:layout_centerHorizontal="true" />
-
- 	<TextView
- 	    android:id="@+id/AddressLabel"
- 	    style="@style/Label"
- 	    android:layout_width="wrap_content"
- 	    android:layout_height="wrap_content"
- 	    android:layout_centerHorizontal="true"
- 	    android:layout_below="@+id/qr_button"
- 	    android:text="@string/address_label" />
+        android:background="@drawable/abort" />
 
  	 <TextView
         android:id="@+id/AddressValue"
@@ -74,14 +29,87 @@
         android:layout_below="@id/AddressLabel"
         android:hint="@string/address_hint" />
 
- 	<Button
- 	    android:id="@+id/veriftpaymentbutton"
- 	    android:layout_width="wrap_content"
- 	    android:layout_height="wrap_content"
- 	    android:layout_centerHorizontal="true"
- 	    android:layout_marginTop="70dp"
- 	    android:layout_below="@+id/AddressValue"
- 	    android:text="Verify Payment" />
+ 	 <TextView
+ 	     android:id="@+id/sell_instructions"
+ 	     style="@style/Instructions"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_below="@+id/abort"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:layout_marginTop="10dp"
+ 	     android:hint="Select how much you want to sell (USD)" />
 
+ 	 <TextView
+ 	     android:id="@+id/AddressLabel"
+ 	     style="@style/Label"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_below="@+id/qr_button"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:layout_marginTop="29dp"
+ 	     android:text="@string/address_label" />
+
+ 	 <ImageButton
+ 	     android:id="@+id/qr_button"
+ 	     style="@style/Button"
+ 	     android:layout_width="250dp"
+ 	     android:layout_height="250dp"
+ 	     android:layout_below="@+id/sell_instructions"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:layout_marginTop="183dp" />
+
+ 	 <TextView
+ 	     android:id="@+id/step2"
+ 	     style="@style/Label"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_below="@+id/sell_instructions"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:layout_marginTop="152dp"
+ 	     android:text="Send Bitcoin" />
+
+ 	 <Button
+ 	     android:id="@+id/button2"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignBottom="@+id/button1"
+ 	     android:layout_toLeftOf="@+id/AddressValue"
+ 	     android:text="5" />
+
+ 	 <Button
+ 	     android:id="@+id/button3"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignBottom="@+id/button2"
+ 	     android:layout_toRightOf="@+id/AddressValue"
+ 	     android:text="20" />
+
+ 	 <Button
+ 	     android:id="@+id/button1"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignBottom="@+id/step2"
+ 	     android:layout_marginBottom="48dp"
+ 	     android:layout_toLeftOf="@+id/button2"
+ 	     android:text="1" />
+
+ 	 <TextView
+ 	     android:id="@+id/textView1"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+		 android:layout_centerHorizontal="true"
+ 	     android:layout_below="@+id/sell_instructions"
+ 	     android:layout_marginTop="18dp"
+ 	     android:text="Amount To send"
+ 	     android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 	 <Button
+ 	     android:id="@+id/button4"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignBaseline="@+id/button3"
+ 	     android:layout_alignBottom="@+id/button3"
+ 	     android:layout_alignRight="@+id/qr_button"
+ 	     android:text="reset" />
  	
 </RelativeLayout>
