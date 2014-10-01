@@ -115,6 +115,7 @@ private void startSessionsActivity() {
       					Toast.makeText(getApplicationContext(), "Button Pressed", Toast.LENGTH_LONG).show();
       					//startBuyerSelectionActivity();
       					finish();
+      					
       				}
       		});
           }
