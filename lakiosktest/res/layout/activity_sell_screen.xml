@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@drawable/background7"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BuyScreenActivity" >
+
+    
+    
+   <Button
+        android:id="@+id/abort"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/abort" /> 
+    
+	<TextView
+        android:id="@+id/sell_instructions"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:hint="Select how much you want to sell (USD)" >
+    </TextView>
+
+	<com.cash2btc.bitcoindave.CustomAutoCompleteView
+ 	    android:id="@+id/myautocomplete"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_below="@id/sell_instructions"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:completionThreshold="1"
+ 	    android:ems="10"
+ 	    android:imeOptions="actionDone"
+ 	    android:inputType="number"
+ 	    android:textSize="26sp" >
+ 	    <requestFocus />
+ 	</com.cash2btc.bitcoindave.CustomAutoCompleteView>
+
+ 	<Button
+ 	    android:id="@+id/showqrbutton"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignRight="@id/myautocomplete"
+ 	    android:layout_alignBaseline="@id/myautocomplete"
+ 	    android:text="Update QR Code" />
+ 	 <TextView
+ 	    android:id="@+id/step2"
+ 	    style="@style/Label"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:layout_below="@+id/myautocomplete"
+ 	    android:layout_marginTop="30dp"
+ 	    android:text="Send Bitcoin" />
+ 	<ImageButton
+ 	    android:id="@+id/qr_button"
+ 	    style="@style/Button"
+ 	    android:layout_width="250dp"
+ 	    android:layout_height="250dp"
+ 	    android:layout_marginTop="10dp"
+ 	    android:layout_below="@+id/step2"
+ 	    android:layout_centerHorizontal="true" />
+
+ 	<TextView
+ 	    android:id="@+id/AddressLabel"
+ 	    style="@style/Label"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:layout_below="@+id/qr_button"
+ 	    android:text="@string/address_label" />
+
+ 	 <TextView
+        android:id="@+id/AddressValue"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/AddressLabel"
+        android:hint="@string/address_hint" />
+
+ 	<Button
+ 	    android:id="@+id/veriftpaymentbutton"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:layout_marginTop="70dp"
+ 	    android:layout_below="@+id/AddressValue"
+ 	    android:text="Verify Payment" />
+
+ 	
+</RelativeLayout>

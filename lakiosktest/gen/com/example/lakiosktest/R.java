@@ -8,7 +8,36 @@
 package com.example.lakiosktest;
 
 public final class R {
+    public static final class array {
+        public static final int android_names=0x7f050004;
+        /**  Settings - see strings_activity_settings.xml 
+  Test array  
+         */
+        public static final int list_of_countries=0x7f050003;
+        public static final int planets_array=0x7f050002;
+        public static final int private_keys_types=0x7f050005;
+        public static final int private_keys_types_for_qr=0x7f050008;
+        public static final int private_keys_types_to_generate=0x7f050007;
+        public static final int private_keys_types_to_generate_labels=0x7f050006;
+        public static final int redemptionProviders=0x7f050000;
+        public static final int redemptionProvidersValues=0x7f050001;
+    }
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarStyle=0x7f010000;
+    }
+    public static final class color {
+        public static final int black=0x7f060003;
+        public static final int black_overlay=0x7f060000;
+        public static final int dark_green=0x7f060002;
+        public static final int dark_orange=0x7f060001;
+        public static final int red=0x7f060004;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -17,38 +46,713 @@ public final class R {
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int abort=0x7f020000;
+        public static final int apex_icon=0x7f020001;
+        public static final int background=0x7f020002;
+        public static final int background2=0x7f020003;
+        public static final int background3=0x7f020004;
+        public static final int background5=0x7f020005;
+        public static final int background6=0x7f020006;
+        public static final int background7=0x7f020007;
+        public static final int bitcoin=0x7f020008;
+        public static final int bitcoin_wallet_icon=0x7f020009;
+        public static final int btc_logo=0x7f02000a;
+        public static final int buy=0x7f02000b;
+        public static final int buybuttonshape=0x7f02000c;
+        public static final int buyc=0x7f02000d;
+        public static final int dave_icon=0x7f02000e;
+        public static final int davexxl=0x7f02000f;
+        public static final int dbackground=0x7f020010;
+        public static final int dbackground2=0x7f020011;
+        public static final int dbackground3=0x7f020012;
+        public static final int dbackground4=0x7f020013;
+        public static final int dollar_icon=0x7f020014;
+        public static final int done=0x7f020015;
+        public static final int home=0x7f020016;
+        public static final int homel=0x7f020017;
+        public static final int ic_launcher=0x7f020018;
+        public static final int mazacoin=0x7f020019;
+        public static final int next=0x7f02001a;
+        public static final int option1=0x7f02001b;
+        public static final int option2=0x7f02001c;
+        public static final int option3=0x7f02001d;
+        public static final int option4=0x7f02001e;
+        public static final int pubnub_icon=0x7f02001f;
+        public static final int qr=0x7f020020;
+        public static final int qr_icon=0x7f020021;
+        public static final int scan=0x7f020022;
+        public static final int sell=0x7f020023;
+        public static final int sms=0x7f020024;
+        public static final int usb_icon=0x7f020025;
+        public static final int wbackground=0x7f020026;
+        public static final int wbackground2=0x7f020027;
     }
     public static final class id {
-        public static final int action_settings=0x7f080002;
-        public static final int button1=0x7f080001;
-        public static final int editText1=0x7f080000;
+        public static final int AddressLabel=0x7f090002;
+        public static final int AddressValue=0x7f090003;
+        public static final int BuyButton=0x7f090010;
+        public static final int CancelButton=0x7f090018;
+        public static final int DoneButton=0x7f09005f;
+        public static final int PlanB_View=0x7f090013;
+        public static final int ProviderDeleteButton=0x7f09004a;
+        public static final int ProviderLabel=0x7f090049;
+        public static final int ProviderSpinner=0x7f090048;
+        public static final int ProviderValue=0x7f09004b;
+        public static final int Selection_instructions=0x7f090020;
+        public static final int Selection_label=0x7f090021;
+        public static final int SessionLabel=0x7f090016;
+        public static final int SessionValue=0x7f090017;
+        public static final int StatusLabel=0x7f090014;
+        public static final int StatusValue=0x7f090015;
+        public static final int TenderedLabel=0x7f09000a;
+        public static final int TenderedValue=0x7f09000b;
+        public static final int Text2=0x7f09008c;
+        public static final int Text3=0x7f09008d;
+        public static final int Text4=0x7f09008e;
+        public static final int TextView01=0x7f0900a1;
+        public static final int abort=0x7f090001;
+        public static final int action_decrypt=0x7f090000;
+        public static final int action_encrypt=0x7f090078;
+        public static final int action_settings=0x7f0900e6;
+        public static final int address=0x7f09001b;
+        public static final int address_instructions=0x7f090019;
+        public static final int address_label=0x7f09001a;
+        public static final int amount=0x7f090084;
+        public static final int authorization_label=0x7f090046;
+        public static final int authorization_value=0x7f090047;
+        public static final int bitcoin_label=0x7f090008;
+        public static final int bitcoin_market_price=0x7f090032;
+        public static final int bitcoin_value=0x7f090009;
+        public static final int button1=0x7f09009a;
+        public static final int button2=0x7f09009e;
+        public static final int button3=0x7f09009f;
+        public static final int button4=0x7f0900a3;
+        public static final int buttonExit=0x7f090090;
+        public static final int buttonScanKeyQR=0x7f090045;
+        public static final int buttonScanQR=0x7f09001f;
+        public static final int buy=0x7f090023;
+        public static final int buy_instructions=0x7f090012;
+        public static final int cameraPreview=0x7f09001c;
+        public static final int cancel=0x7f0900e7;
+        public static final int change_address=0x7f0900e8;
+        public static final int change_password_button=0x7f09004e;
+        public static final int col1=0x7f0900c1;
+        public static final int demo_toggle=0x7f090041;
+        public static final int done_button=0x7f09003e;
+        public static final int editText1=0x7f090096;
+        public static final int editText2=0x7f090098;
+        public static final int editText3=0x7f09009c;
+        public static final int editText4=0x7f0900a2;
+        public static final int enter_private_key_to_spend_desc=0x7f090079;
+        public static final int err_amount=0x7f090083;
+        public static final int err_password=0x7f090076;
+        public static final int err_raw_tx=0x7f09007e;
+        public static final int err_recipient_address=0x7f090081;
+        public static final int exchange_rate_label=0x7f090006;
+        public static final int exchange_rate_value=0x7f090007;
+        public static final int exit_button=0x7f0900a6;
+        public static final int fullscreen_content=0x7f09002d;
+        public static final int fullscreen_content_controls=0x7f09002e;
+        public static final int generate_button=0x7f09006d;
+        public static final int generate_wallet=0x7f09006e;
+        public static final int imgApex=0x7f09000e;
+        public static final int imgCash=0x7f09000f;
+        public static final int imgLogo=0x7f090024;
+        public static final int imgUsb=0x7f09000d;
+        public static final int link1=0x7f090068;
+        public static final int link2=0x7f090069;
+        public static final int link3=0x7f09006a;
+        public static final int listViewDevices=0x7f09008b;
+        public static final int locale_spinner=0x7f0900b1;
+        public static final int login=0x7f09002b;
+        public static final int login_form=0x7f090028;
+        public static final int login_instructions=0x7f090029;
+        public static final int login_status=0x7f090026;
+        public static final int login_status_message=0x7f090027;
+        public static final int maximum_funds_available_label=0x7f090004;
+        public static final int maximum_funds_available_value=0x7f090005;
+        public static final int myautocomplete=0x7f090061;
+        public static final int next_button=0x7f09001d;
+        public static final int owner_bc_account_label=0x7f09004f;
+        public static final int owner_bc_account_value=0x7f090050;
+        public static final int owner_bc_balance_currency_value=0x7f090092;
+        public static final int owner_bc_balance_label=0x7f09005a;
+        public static final int owner_bc_balance_value=0x7f09005b;
+        public static final int owner_bc_password1_label=0x7f090051;
+        public static final int owner_bc_password1_value=0x7f090052;
+        public static final int owner_bc_password2_label=0x7f090053;
+        public static final int owner_bc_password2_value=0x7f090054;
+        public static final int owner_bc_scan=0x7f090091;
+        public static final int owner_bill1_label=0x7f0900b3;
+        public static final int owner_bill2_label=0x7f0900b4;
+        public static final int owner_bill3_label=0x7f0900b5;
+        public static final int owner_bill4_label=0x7f0900b6;
+        public static final int owner_bill5_label=0x7f0900b7;
+        public static final int owner_bill6_label=0x7f0900b8;
+        public static final int owner_bill7_label=0x7f0900b9;
+        public static final int owner_bills_label=0x7f0900b2;
+        public static final int owner_bitcoin_radio=0x7f0900ad;
+        public static final int owner_common_instructions=0x7f0900a4;
+        public static final int owner_currency_label=0x7f0900ae;
+        public static final int owner_dave_password_label=0x7f09005c;
+        public static final int owner_dave_password_value=0x7f09005d;
+        public static final int owner_edit0_value=0x7f0900ba;
+        public static final int owner_edit1_value=0x7f0900bb;
+        public static final int owner_edit2_value=0x7f0900bc;
+        public static final int owner_edit3_value=0x7f0900bd;
+        public static final int owner_edit4_value=0x7f0900be;
+        public static final int owner_edit5_value=0x7f0900bf;
+        public static final int owner_edit6_value=0x7f0900c0;
+        public static final int owner_fees_label=0x7f0900a7;
+        public static final int owner_instructions=0x7f090042;
+        public static final int owner_kiosk_label=0x7f0900a5;
+        public static final int owner_label1=0x7f0900c2;
+        public static final int owner_label10=0x7f0900cb;
+        public static final int owner_label11=0x7f0900cc;
+        public static final int owner_label12=0x7f0900cd;
+        public static final int owner_label13=0x7f0900ce;
+        public static final int owner_label2=0x7f0900c3;
+        public static final int owner_label3=0x7f0900c4;
+        public static final int owner_label4=0x7f0900c5;
+        public static final int owner_label5=0x7f0900c6;
+        public static final int owner_label6=0x7f0900c7;
+        public static final int owner_label7=0x7f0900c8;
+        public static final int owner_label8=0x7f0900c9;
+        public static final int owner_label9=0x7f0900ca;
+        public static final int owner_max_label=0x7f090058;
+        public static final int owner_max_value=0x7f090059;
+        public static final int owner_pager=0x7f09005e;
+        public static final int owner_password1_label=0x7f0900a8;
+        public static final int owner_password1_value=0x7f0900a9;
+        public static final int owner_password2_label=0x7f0900aa;
+        public static final int owner_password2_value=0x7f0900ab;
+        public static final int owner_primary_account_bitcoin=0x7f0900ac;
+        public static final int owner_session_list=0x7f0900df;
+        public static final int owner_symbol_label=0x7f0900b0;
+        public static final int owner_transaction_fee_label=0x7f090056;
+        public static final int owner_transaction_fee_value=0x7f090057;
+        public static final int owner_value1=0x7f0900cf;
+        public static final int owner_value10=0x7f0900d8;
+        public static final int owner_value11=0x7f0900d9;
+        public static final int owner_value12=0x7f0900da;
+        public static final int owner_value13=0x7f0900db;
+        public static final int owner_value2=0x7f0900d0;
+        public static final int owner_value3=0x7f0900d1;
+        public static final int owner_value4=0x7f0900d2;
+        public static final int owner_value5=0x7f0900d3;
+        public static final int owner_value6=0x7f0900d4;
+        public static final int owner_value7=0x7f0900d5;
+        public static final int owner_value8=0x7f0900d6;
+        public static final int owner_value9=0x7f0900d7;
+        public static final int password=0x7f09002a;
+        public static final int password_button=0x7f090075;
+        public static final int password_data=0x7f090044;
+        public static final int password_data1=0x7f09004c;
+        public static final int password_data2=0x7f09004d;
+        public static final int password_edit=0x7f090077;
+        public static final int password_label=0x7f090043;
+        public static final int password_layout=0x7f090074;
+        public static final int paste_tx_button=0x7f09007d;
+        public static final int payout_button=0x7f0900dd;
+        public static final int payout_buttons=0x7f0900dc;
+        public static final int payout_done_button=0x7f0900de;
+        public static final int planets_spinner=0x7f0900af;
+        public static final int print_button=0x7f09003f;
+        public static final int private_key_desc=0x7f09006f;
+        public static final int private_key_label=0x7f090071;
+        public static final int private_key_type_label=0x7f090070;
+        public static final int qr_address_button=0x7f09006c;
+        public static final int qr_button=0x7f090064;
+        public static final int qr_code_data=0x7f0900e3;
+        public static final int qr_code_image=0x7f090067;
+        public static final int qr_priv_image=0x7f0900e5;
+        public static final int qr_private_key_button=0x7f090073;
+        public static final int qr_pub_image=0x7f0900e4;
+        public static final int raw_tx=0x7f09007f;
+        public static final int raw_tx_description=0x7f09007c;
+        public static final int raw_tx_description_header=0x7f09007b;
+        public static final int recipient_address=0x7f090082;
+        public static final int redemption_bc_hash_value=0x7f09003c;
+        public static final int redemption_bc_msg_value=0x7f090038;
+        public static final int redemption_bc_notice_value=0x7f09003a;
+        public static final int redemption_hash_label=0x7f09003b;
+        public static final int redemption_instructions=0x7f090033;
+        public static final int redemption_msg_label=0x7f090037;
+        public static final int redemption_notice_label=0x7f090039;
+        public static final int redemption_results=0x7f090036;
+        public static final int redemption_status=0x7f090034;
+        public static final int redemption_status_message=0x7f090035;
+        public static final int result_button=0x7f09003d;
+        public static final int scan_private_key_button=0x7f090072;
+        public static final int scan_recipient_address_button=0x7f090080;
+        public static final int section_label=0x7f090093;
+        public static final int sell=0x7f090022;
+        public static final int sell_instructions=0x7f090060;
+        public static final int sellinstructionsaaaaa=0x7f09000c;
+        public static final int send_layout=0x7f09007a;
+        public static final int send_tx_button=0x7f09008a;
+        public static final int session_summary_1=0x7f090066;
+        public static final int showqrbutton=0x7f090062;
+        public static final int sign_in_button=0x7f09002c;
+        public static final int spend_tx=0x7f090089;
+        public static final int spend_tx_description=0x7f090085;
+        public static final int spend_tx_required_age_for_free_tx=0x7f090086;
+        public static final int spend_tx_required_age_for_free_tx_checkbox=0x7f090087;
+        public static final int spend_tx_warning_footer=0x7f090088;
+        public static final int start_bitcoin_button=0x7f090031;
+        public static final int start_buttons=0x7f090030;
+        public static final int step2=0x7f090063;
+        public static final int test_bc_account=0x7f090055;
+        public static final int textPrinterName=0x7f09008f;
+        public static final int textView1=0x7f090094;
+        public static final int textView2=0x7f090095;
+        public static final int textView3=0x7f090099;
+        public static final int textView4=0x7f090097;
+        public static final int textView5=0x7f09009b;
+        public static final int textView6=0x7f09009d;
+        public static final int textView7=0x7f0900a0;
+        public static final int textViewItem=0x7f09006b;
+        public static final int timer=0x7f090011;
+        public static final int toggle_1=0x7f0900e0;
+        public static final int toggle_2=0x7f0900e1;
+        public static final int toggle_3=0x7f0900e2;
+        public static final int tvVersion=0x7f090025;
+        public static final int veriftpaymentbutton=0x7f090065;
+        public static final int wallet_button=0x7f09001e;
+        public static final int welcome_instructions=0x7f09002f;
+        public static final int welcome_splash=0x7f090040;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_buy_screen=0x7f030000;
+        public static final int activity_buy_screen_prod_btc=0x7f030001;
+        public static final int activity_buy_screen_test=0x7f030002;
+        public static final int activity_buy_screend=0x7f030003;
+        public static final int activity_buy_screenw=0x7f030004;
+        public static final int activity_buyer_information=0x7f030005;
+        public static final int activity_buyer_information_doge2=0x7f030006;
+        public static final int activity_buyer_information_test=0x7f030007;
+        public static final int activity_buyer_informationd=0x7f030008;
+        public static final int activity_buyer_informationw=0x7f030009;
+        public static final int activity_buyer_selection=0x7f03000a;
+        public static final int activity_fullscreen=0x7f03000b;
+        public static final int activity_log_view=0x7f03000c;
+        public static final int activity_login=0x7f03000d;
+        public static final int activity_main=0x7f03000e;
+        public static final int activity_maind=0x7f03000f;
+        public static final int activity_mainh=0x7f030010;
+        public static final int activity_owner=0x7f030011;
+        public static final int activity_owner_blockchain=0x7f030012;
+        public static final int activity_owner_pager=0x7f030013;
+        public static final int activity_provider_settings=0x7f030014;
+        public static final int activity_redemption_blockchain=0x7f030015;
+        public static final int activity_redemption_blockchain_test=0x7f030016;
+        public static final int activity_redemption_blockchaind=0x7f030017;
+        public static final int activity_redemption_blockchainw=0x7f030018;
+        public static final int activity_sell_screen=0x7f030019;
+        public static final int activity_session=0x7f03001a;
+        public static final int address_qr=0x7f03001b;
+        public static final int list_view_row_item=0x7f03001c;
+        public static final int main=0x7f03001d;
+        public static final int owner_blockchain_fragment=0x7f03001e;
+        public static final int owner_cointrader_fragment=0x7f03001f;
+        public static final int owner_common_fragment=0x7f030020;
+        public static final int owner_sessions_fragment=0x7f030021;
+        public static final int private_key_qr=0x7f030022;
+        public static final int wallet_qr=0x7f030023;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int buy_qr_=0x7f0c0000;
+        public static final int buy_screen=0x7f0c0001;
+        public static final int buyer_information=0x7f0c0002;
+        public static final int change_address=0x7f0c0003;
+        public static final int initialize=0x7f0c0004;
+        public static final int just_cancel=0x7f0c0005;
+        public static final int log_view=0x7f0c0006;
+        public static final int login=0x7f0c0007;
+        public static final int main=0x7f0c0008;
+        public static final int provider_settings=0x7f0c0009;
+        public static final int session=0x7f0c000a;
+    }
+    public static final class plurals {
+        public static final int confirmations=0x7f0a0000;
+        public static final int days=0x7f0a0002;
+        public static final int hours=0x7f0a0001;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int Selection_label=0x7f080058;
+        public static final int ServiceProvider_name=0x7f080039;
+        public static final int TextDevices=0x7f0800de;
+        public static final int TextPrintPicture=0x7f0800df;
+        public static final int TextPrintText=0x7f0800e0;
+        public static final int TextStatus=0x7f0800e1;
+        public static final int action_forgot_password=0x7f080123;
+        public static final int action_settings=0x7f08000a;
+        public static final int action_sign_in_register=0x7f080121;
+        public static final int action_sign_in_short=0x7f080122;
+        /**  <string name="title_activity_phone_number">Enter Phone Number</string> 
+ <string name="phone_instructions">Welcome, to begin we need your bitcoin address. \n Please Scan in your address by pressing the \n Scan QR button If you using sms redemption \n please Enter Phone Number or leave blank</string> 
+         */
+        public static final int address_hint=0x7f080049;
+        public static final int address_label=0x7f08005c;
+        public static final int address_value=0x7f080065;
+        public static final int amount_hint=0x7f0800fb;
+        public static final int app_name=0x7f080006;
+        public static final int authorization_label=0x7f0800c8;
+        public static final int authorization_value=0x7f0800c9;
+        public static final int bad_private_key=0x7f0800e7;
+        public static final int bc_redemption_instructions=0x7f08004f;
+        public static final int bc_redemption_instructions2=0x7f080050;
+        public static final int bitcoin_label=0x7f08005f;
+        public static final int buttonScanKeyQR=0x7f0800cc;
+        public static final int buttonScanQR=0x7f080016;
+        /**  Buy Buttons 
+         */
+        public static final int buy_bitcoin=0x7f08001d;
+        public static final int buy_bitcoin_demo=0x7f080020;
+        public static final int buy_dogecoin=0x7f08001e;
+        public static final int buy_dogecoin_demo=0x7f080021;
+        public static final int buy_instructions=0x7f08006f;
+        public static final int buy_mazacoin=0x7f08001f;
+        public static final int buy_mazacoin_demo=0x7f080022;
+        public static final int buy_now=0x7f08006a;
+        public static final int cancel=0x7f080025;
+        public static final int cancel_button=0x7f08006d;
+        public static final int change_address_menu=0x7f08006e;
+        public static final int change_password_button=0x7f0800cd;
+        public static final int change_redemption_key_button=0x7f0800c5;
+        public static final int clear_sessions_button=0x7f0800c6;
+        public static final int dbuy_now=0x7f08006b;
+        public static final int decoding=0x7f0800e3;
+        public static final int decrypt_private_key=0x7f08010a;
+        public static final int decrypted=0x7f08010d;
+        public static final int decrypting=0x7f08010f;
+        public static final int delete_button=0x7f0800d0;
+        public static final int dogecoin_label=0x7f080061;
+        public static final int done_button=0x7f0800ca;
+        public static final int dphone_instructions=0x7f080047;
+        public static final int dsplashTitle=0x7f08000c;
+        public static final int dummy_button=0x7f080007;
+        public static final int dummy_content=0x7f080008;
+        public static final int dwelcome_instructions=0x7f080015;
+        public static final int e_missing_account_id=0x7f080000;
+        public static final int e_missing_password_primary=0x7f080001;
+        public static final int e_missing_password_secondary=0x7f080002;
+        public static final int e_password_too_short=0x7f080003;
+        public static final int e_passwords_dont_match=0x7f080004;
+        public static final int e_transaction_owner_account=0x7f080005;
+        public static final int encrypt_private_key=0x7f080108;
+        public static final int encrypted=0x7f08010e;
+        public static final int encrypting=0x7f080110;
+        public static final int enter_your_private_key=0x7f0800f7;
+        public static final int error_amount_parsing=0x7f0800fc;
+        public static final int error_failed_to_create_transaction=0x7f0800ee;
+        public static final int error_field_required=0x7f080128;
+        public static final int error_incorrect_password=0x7f080127;
+        public static final int error_invalid_customer_id=0x7f080125;
+        public static final int error_invalid_password=0x7f080126;
+        public static final int error_message=0x7f0800d5;
+        public static final int error_no_spendable_outputs_found=0x7f080113;
+        public static final int error_not_enough_funds=0x7f0800fd;
+        public static final int error_oom_bip38=0x7f080112;
+        public static final int error_unable_to_decode_json_transaction=0x7f08011d;
+        public static final int error_unable_to_decode_transaction=0x7f0800ed;
+        public static final int error_unknown=0x7f0800fe;
+        public static final int exchange_fee_label=0x7f080063;
+        public static final int exchange_rate_label=0x7f080062;
+        public static final int exit=0x7f0800da;
+        public static final int exit_button=0x7f0800cb;
+        public static final int generate_button=0x7f0800e4;
+        public static final int generated_tx_have_too_big_fee=0x7f08011b;
+        public static final int generating=0x7f0800e2;
+        public static final int generating_failed=0x7f0800e6;
+        public static final int hello_world=0x7f0800d2;
+        public static final int hint_password=0x7f080107;
+        public static final int image_description=0x7f080017;
+        public static final int ime_decrypt=0x7f08010c;
+        public static final int ime_encrypt=0x7f08010b;
+        public static final int incorrect_password=0x7f080111;
+        public static final int input_tx_is_old_enough=0x7f0800f1;
+        public static final int invalid_address=0x7f0800f9;
+        public static final int json_err_no_unspent_outputs=0x7f08011c;
+        public static final int login_instructions=0x7f080129;
+        public static final int login_instructions_empty=0x7f08012a;
+        public static final int login_progress_signing_in=0x7f080124;
+        public static final int maximum_funds_available_label=0x7f080073;
+        public static final int mazacoin_label=0x7f080060;
+        /**  Menus 
+         */
+        public static final int menu_log=0x7f080023;
+        public static final int menu_preferences=0x7f0800ff;
+        public static final int menu_sessions=0x7f080024;
+        public static final int next_button=0x7f080043;
+        public static final int no_items=0x7f0800d3;
+        public static final int not_decrypted_yet=0x7f080109;
+        public static final int output_address_same_as_input=0x7f08011a;
+        public static final int owner_bc_account_hint=0x7f0800a4;
+        public static final int owner_bc_account_label=0x7f0800a5;
+        public static final int owner_bc_balance_initial=0x7f0800ac;
+        public static final int owner_bc_balance_label=0x7f0800ab;
+        public static final int owner_bc_max_hint=0x7f0800a9;
+        public static final int owner_bc_max_label=0x7f0800a8;
+        public static final int owner_bc_password1_hint=0x7f0800a2;
+        public static final int owner_bc_password1_label=0x7f0800a3;
+        public static final int owner_bc_password2_hint=0x7f0800a0;
+        public static final int owner_bc_password2_label=0x7f0800a1;
+        /**  Owner Blockchain Activity 
+         */
+        public static final int owner_bc_title=0x7f08009b;
+        public static final int owner_bill1_hint=0x7f08008a;
+        public static final int owner_bill1_label=0x7f080083;
+        public static final int owner_bill2_hint=0x7f08008b;
+        public static final int owner_bill2_label=0x7f080084;
+        public static final int owner_bill3_hint=0x7f08008c;
+        public static final int owner_bill3_label=0x7f080085;
+        public static final int owner_bill4_hint=0x7f08008d;
+        public static final int owner_bill4_label=0x7f080086;
+        public static final int owner_bill5_hint=0x7f08008e;
+        public static final int owner_bill5_label=0x7f080087;
+        public static final int owner_bill6_hint=0x7f08008f;
+        public static final int owner_bill6_label=0x7f080088;
+        public static final int owner_bill7_hint=0x7f080090;
+        public static final int owner_bill7_label=0x7f080089;
+        public static final int owner_bills_label=0x7f080082;
+        public static final int owner_common_instructions=0x7f080095;
+        /**  Login Activity - see separate file 
+ Owner Doge Fragment 
+         */
+        public static final int owner_common_title=0x7f080075;
+        public static final int owner_ct_account_hint=0x7f0800b7;
+        public static final int owner_ct_account_label=0x7f0800b8;
+        public static final int owner_ct_balance=0x7f0800be;
+        public static final int owner_ct_balance_initial=0x7f0800c1;
+        public static final int owner_ct_balance_label=0x7f0800c0;
+        public static final int owner_ct_balance_maza=0x7f0800bf;
+        public static final int owner_ct_instructions=0x7f0800b0;
+        public static final int owner_ct_max_hint=0x7f0800bc;
+        public static final int owner_ct_max_label=0x7f0800bb;
+        public static final int owner_ct_password_hint=0x7f0800b5;
+        public static final int owner_ct_password_label=0x7f0800b6;
+        public static final int owner_ct_price_button=0x7f0800c2;
+        public static final int owner_ct_private_key=0x7f0800b1;
+        public static final int owner_ct_private_key_hint=0x7f0800b2;
+        public static final int owner_ct_public_key_hint=0x7f0800b3;
+        public static final int owner_ct_public_key_label=0x7f0800b4;
+        /**  Owner Cointrader Fragment 
+         */
+        public static final int owner_ct_title=0x7f0800af;
+        /**  common owner fragment 
+         */
+        public static final int owner_currency_label=0x7f080080;
+        public static final int owner_dave_password_hint=0x7f08009e;
+        public static final int owner_dave_password_label=0x7f08009f;
+        public static final int owner_doge_account_hint=0x7f080079;
+        public static final int owner_doge_account_label=0x7f08007a;
+        public static final int owner_doge_balance_initial=0x7f08007f;
+        public static final int owner_doge_balance_label=0x7f08007e;
+        public static final int owner_doge_instructions=0x7f080078;
+        public static final int owner_doge_max_hint=0x7f08007d;
+        public static final int owner_doge_max_label=0x7f08007c;
+        public static final int owner_doge_title=0x7f080077;
+        public static final int owner_fees_label=0x7f080097;
+        public static final int owner_instructions=0x7f08009d;
+        public static final int owner_kiosk_label=0x7f080096;
+        public static final int owner_password1_hint=0x7f080093;
+        public static final int owner_password1_label=0x7f080094;
+        public static final int owner_password2_hint=0x7f080091;
+        public static final int owner_password2_label=0x7f080092;
+        public static final int owner_password_hint=0x7f0800ce;
+        public static final int owner_payout_button=0x7f080099;
+        public static final int owner_payout_instructions=0x7f08009a;
+        public static final int owner_primary_checkbox=0x7f080098;
+        public static final int owner_sessions_title=0x7f080076;
+        public static final int owner_symbol_label=0x7f080081;
+        public static final int owner_transaction_fee_hint=0x7f0800ae;
+        public static final int owner_transaction_fee_label=0x7f0800ad;
+        public static final int paste=0x7f080104;
+        public static final int phone_instructions=0x7f080046;
+        public static final int phone_number_hint=0x7f080042;
+        /**  Address / Enter Phone Number Activity 
+         */
+        public static final int phone_number_label=0x7f080041;
+        /**  Buy Screen activity 
+         */
+        public static final int plan_b=0x7f080059;
+        public static final int plan_d=0x7f08005a;
+        public static final int plan_w=0x7f08005b;
+        public static final int pref_lastUpdateTime=0x7f080037;
+        public static final int pref_owner_bc_account_id_key=0x7f080034;
+        public static final int pref_owner_bc_password2_key=0x7f080033;
+        public static final int pref_owner_bc_password_key=0x7f080032;
+        public static final int pref_owner_max_transaction_key=0x7f080035;
+        /**  Strings related to Preferences data storeage 
+         */
+        public static final int pref_owner_password=0x7f080026;
+        public static final int pref_owner_password_key=0x7f080027;
+        public static final int pref_owner_password_summ=0x7f080028;
+        public static final int pref_owner_transaction_fee_key=0x7f080036;
+        public static final int pref_provider=0x7f08002c;
+        public static final int pref_redemption_current=0x7f08002f;
+        public static final int pref_redemption_current_key=0x7f080030;
+        public static final int pref_redemption_current_summ=0x7f080031;
+        public static final int pref_redemption_password=0x7f080029;
+        public static final int pref_redemption_password_key=0x7f08002a;
+        public static final int pref_redemption_password_summ=0x7f08002b;
+        public static final int pref_redemption_provider_key=0x7f08002d;
+        public static final int pref_redemption_provider_summ=0x7f08002e;
+        public static final int preference_extra_fee=0x7f080101;
+        public static final int print=0x7f080116;
+        public static final int print_bc_account=0x7f0800a7;
+        public static final int print_button=0x7f080054;
+        public static final int print_ct_account=0x7f0800ba;
+        public static final int printer_off_line=0x7f080019;
+        public static final int printpicture=0x7f0800d7;
+        public static final int printtext=0x7f0800d8;
+        public static final int private_key_desc=0x7f0800e5;
+        public static final int private_key_for=0x7f080117;
+        public static final int private_key_type=0x7f0800fa;
+        /**  Strings related to login 
+         */
+        public static final int prompt_customer_id=0x7f08011f;
+        public static final int prompt_password=0x7f080120;
+        public static final int provider_delete=0x7f080040;
+        public static final int provider_done=0x7f08003f;
+        public static final int provider_instructions=0x7f08003a;
+        public static final int provider_password_hint=0x7f08003e;
+        public static final int provider_password_label=0x7f08003d;
+        public static final int provider_url_hint=0x7f08003c;
+        public static final int provider_url_label=0x7f08003b;
+        public static final int push_tx_label=0x7f080105;
+        public static final int qr_code_desc=0x7f080115;
+        /**  Redemption Activity 
+         */
+        public static final int qr_scan=0x7f08004b;
+        public static final int raw_tx_description=0x7f0800e9;
+        public static final int raw_tx_description_header=0x7f0800e8;
+        public static final int raw_tx_description_json_link=0x7f0800eb;
+        public static final int raw_tx_description_wut=0x7f0800ec;
+        public static final int raw_tx_description_wut_link=0x7f0800ea;
+        public static final int raw_tx_hint=0x7f0800f5;
+        public static final int recipient_address_hint=0x7f0800f6;
+        public static final int redemption_api_key_hint=0x7f0800c4;
+        /**  Owner activity 
+         */
+        public static final int redemption_api_key_label=0x7f0800c3;
+        public static final int redemption_hash_lable=0x7f080051;
+        public static final int redemption_instructions=0x7f08004d;
+        public static final int redemption_label=0x7f08004c;
+        public static final int redemption_msg_lable=0x7f080052;
+        public static final int redemption_notice_lable=0x7f080053;
+        public static final int redemption_progress=0x7f080056;
+        public static final int result_button=0x7f080055;
+        public static final int sampletext=0x7f0800d9;
+        public static final int scan=0x7f080103;
+        public static final int scan_bc_account=0x7f0800a6;
+        public static final int scan_ct_account=0x7f0800b9;
+        public static final int scan_title=0x7f080102;
+        /**  Buy Selection activity 
+         */
+        public static final int select_info=0x7f080057;
+        public static final int sell_instructions=0x7f080070;
+        /**   Printer/wallet merge 
+         */
+        public static final int selpicture=0x7f0800d6;
+        /**  Session Provider 
+         */
+        public static final int sessionProvider_name=0x7f08004a;
+        public static final int session_intro=0x7f0800d1;
+        public static final int session_label=0x7f08005d;
+        public static final int session_total_label=0x7f0800c7;
+        public static final int session_value=0x7f080068;
+        public static final int sessions_line1=0x7f08001a;
+        public static final int sessions_line2=0x7f08001b;
+        public static final int sessions_line3=0x7f08001c;
+        public static final int setting_private_key_type=0x7f080100;
+        public static final int share=0x7f080118;
+        public static final int share_chooser_title=0x7f080119;
+        public static final int spend_tx_description=0x7f0800ef;
+        public static final int spend_tx_hint=0x7f0800f8;
+        public static final int spend_tx_warning_footer=0x7f0800f4;
+        public static final int spend_tx_with_change_description=0x7f0800f0;
+        public static final int splashTitle=0x7f08000b;
+        public static final int splashUrl=0x7f080012;
+        public static final int splashVersion=0x7f080013;
+        public static final int start_bitcoin_button=0x7f08000e;
+        public static final int start_button=0x7f08000d;
+        public static final int start_demo_button=0x7f080011;
+        public static final int start_doge_button=0x7f08000f;
+        public static final int start_maza_button=0x7f080010;
+        public static final int status_label=0x7f08005e;
+        public static final int status_value=0x7f080067;
+        public static final int stsLF=0x7f0800dd;
+        public static final int stsNoPaper=0x7f0800db;
+        public static final int stsRolling=0x7f0800dc;
+        public static final int tendered_lable=0x7f080064;
+        public static final int tendered_value=0x7f080066;
+        public static final int test_bc_account=0x7f0800aa;
+        public static final int test_ct_account=0x7f0800bd;
+        public static final int test_doge_account=0x7f08007b;
+        public static final int title=0x7f0800d4;
+        public static final int title_activity_address=0x7f080044;
+        public static final int title_activity_buy_qr_=0x7f08004e;
+        public static final int title_activity_buy_screen=0x7f080071;
+        public static final int title_activity_initialize=0x7f08009c;
+        /**  Log Activity 
+         */
+        public static final int title_activity_log_view=0x7f080074;
+        public static final int title_activity_login=0x7f08011e;
+        public static final int title_activity_main=0x7f080009;
+        /**  Provider Settings Activity 
+         */
+        public static final int title_activity_provider_settings=0x7f080038;
+        public static final int title_activity_selection=0x7f080045;
+        public static final int title_activity_sell_screen=0x7f080072;
+        /**  Session Activity 
+         */
+        public static final int title_activity_session=0x7f0800cf;
+        public static final int title_activity_settings=0x7f08012b;
+        public static final int total_value=0x7f080069;
+        public static final int transaction_complete=0x7f080018;
+        public static final int tx_description_for_clipboard=0x7f080106;
+        public static final int tx_output_is_too_small=0x7f0800f3;
+        public static final int tx_size_too_big_to_be_free=0x7f0800f2;
+        public static final int unable_open_camera=0x7f080114;
+        public static final int wbuy_now=0x7f08006c;
+        public static final int welcome_instructions=0x7f080014;
+        public static final int wphone_instructions=0x7f080048;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
+
+
+
+
+
+
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -62,10 +766,86 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f0b0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f0b0002;
+        public static final int BannerBar=0x7f0b0014;
+        public static final int Button=0x7f0b0011;
+        /**  color = alpha, red, green, blue. 0xFF000000 (100% opaque black), and opaque-white would be 0xFFFFFFFF 
+         */
+        public static final int ButtonBar=0x7f0b0015;
+        public static final int ButtonBarButton=0x7f0b0016;
+        public static final int Button_small=0x7f0b0012;
+        public static final int BuyButton=0x7f0b0013;
+        public static final int FullscreenActionBarStyle=0x7f0b0018;
+        public static final int FullscreenTheme=0x7f0b0003;
+        public static final int Instructions=0x7f0b000e;
+        /**  Custom for D.A.V.E UI 
+         */
+        public static final int Label=0x7f0b0004;
+        public static final int Label_small=0x7f0b000c;
+        public static final int LoginFormContainer=0x7f0b0017;
+        public static final int Switch=0x7f0b0010;
+        public static final int Value=0x7f0b0008;
+        public static final int Value_Inverse=0x7f0b000b;
+        public static final int Value_small=0x7f0b000d;
+        public static final int aLabel=0x7f0b0006;
+        public static final int aValue=0x7f0b0007;
+        public static final int bLabel=0x7f0b0005;
+        public static final int begin=0x7f0b000f;
+        public static final int buyscreenstyle=0x7f0b000a;
+        /**  Paper Wallet 
+         */
+        public static final int error_label=0x7f0b0001;
+        public static final int hValue=0x7f0b0009;
+        public static final int mytheme=0x7f0b0019;
     }
+    public static final class xml {
+        public static final int device_filter=0x7f040000;
+        public static final int preferences=0x7f040001;
+    }
+    public static final class styleable {
+        /** 
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarButtonStyle com.example.lakiosktest:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarStyle com.example.lakiosktest:buttonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_buttonBarButtonStyle
+           @see #ButtonBarContainerTheme_buttonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.lakiosktest.R.attr#buttonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.lakiosktest:buttonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.lakiosktest.R.attr#buttonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.lakiosktest:buttonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
+    };
 }

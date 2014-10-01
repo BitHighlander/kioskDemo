@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OwnerActivity" >
+
+    <TextView
+        android:id="@+id/owner_instructions"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_instructions" />
+
+    <TextView
+        android:id="@+id/owner_bc_account_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_instructions"
+        android:layout_marginTop="10dp"
+        android:text="@string/owner_bc_account_label" />
+
+    <EditText
+        android:id="@+id/owner_bc_account_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_account_label"
+        android:layout_marginLeft="5sp"
+        android:hint="@string/owner_bc_account_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/owner_bc_password1_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_account_value"
+        android:layout_marginTop="10dp"
+        android:text="@string/owner_bc_password1_label" />
+
+    <EditText
+        android:id="@+id/owner_bc_password1_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_password1_label"
+        android:layout_marginLeft="5sp"
+        android:hint="@string/owner_bc_password1_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/owner_bc_password2_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_password1_value"
+        android:layout_marginTop="10dp"
+        android:text="@string/owner_bc_password2_label" />
+
+    <EditText
+        android:id="@+id/owner_bc_password2_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_password2_label"
+        android:layout_marginLeft="5sp"
+        android:hint="@string/owner_bc_password2_hint"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/test_bc_account"
+        style="@style/Button_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_password2_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_bc_account" />
+
+    <TextView
+        android:id="@+id/owner_transaction_fee_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_bc_account"
+        android:layout_marginTop="20dp"
+        android:text="@string/owner_transaction_fee_label" />
+
+    <EditText
+        android:id="@+id/owner_transaction_fee_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/owner_transaction_fee_label"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@id/owner_transaction_fee_label"
+        android:hint="@string/owner_transaction_fee_hint"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/owner_max_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_transaction_fee_label"
+        android:layout_marginTop="10dp"
+        android:text="@string/owner_bc_max_label" />
+
+    <EditText
+        android:id="@+id/owner_max_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/owner_max_label"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@id/owner_max_label"
+        android:hint="@string/owner_bc_max_hint"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/owner_bc_balance_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_max_label"
+        android:layout_marginTop="10dp"
+        android:text="@string/owner_bc_balance_label" />
+
+    <TextView
+        android:id="@+id/owner_bc_balance_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/owner_bc_balance_label"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@id/owner_bc_balance_label"
+        android:text="@string/owner_bc_balance_initial" />
+
+    <TextView
+        android:id="@+id/owner_dave_password_label"
+        style="@style/Label_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_bc_balance_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/owner_dave_password_label" />
+
+    <EditText
+        android:id="@+id/owner_dave_password_value"
+        style="@style/Value_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_dave_password_label"
+        android:hint="@string/owner_dave_password_hint"
+        android:inputType="text" />
+
+    <!-- <Button -->
+    <!-- android:id="@+id/change_password_button" -->
+    <!-- style="@style/Button_small" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@id/owner_dave_password_value" -->
+    <!-- android:text="@string/change_password_button" /> -->
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_dave_password_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/done_button" />
+
+    <!-- Future - show session totals ($, redeems, cancels) -->
+    <!-- <TextView -->
+    <!-- android:id="@+id/session_total_label" -->
+    <!-- style="@style/Label" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@id/authorization_label" -->
+    <!-- android:text="@string/session_total_label" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/clear_sessions_button" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@id/change_password_button" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:text="@string/clear_sessions_button" -->
+    <!-- android:textSize="30sp" /> -->
+
+</RelativeLayout>

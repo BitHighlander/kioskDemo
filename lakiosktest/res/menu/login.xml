@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/cancel"
+        android:showAsAction="ifRoom"
+        android:title="@string/cancel_button">
+
+        <!-- <item -->
+        <!-- android:id="@+id/action_forgot_password" -->
+        <!-- android:showAsAction="never" -->
+        <!-- android:title="@string/action_forgot_password"/> -->
+
+    </item>
+
+</menu>

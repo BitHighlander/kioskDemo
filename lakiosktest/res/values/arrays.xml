@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="redemptionProviders">
+        <item name="default">https://cash2btc.com/backend/test.php?entry=</item>
+    </string-array>
+    <string-array name="redemptionProvidersValues">
+        <item name="default">1</item>
+    </string-array>
+
+</resources>

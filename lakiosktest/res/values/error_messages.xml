@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="e_missing_account_id">Missing Identifier</string>
+    <string name="e_missing_password_primary">Missing Main Password.</string>
+    <string name="e_missing_password_secondary">Missing Second Password.</string>
+    <string name="e_password_too_short">Password must be at least 4 characters.</string>
+    <string name="e_passwords_dont_match">The two passwords do not match.</string>
+    <string name="e_transaction_owner_account">Owner account missing</string>
+
+</resources>

@@ -1,8 +1,396 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">lakiosktest</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Bitcoin D.A.V.E.</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="splashTitle">Cash2BTC’s Bitcoin D.A.V.E.</string>
+    <string name="dsplashTitle">Cash2BTC’s Dogecoin D.A.V.E.</string>
+    <string name="start_button">START</string>
+    <string name="start_bitcoin_button">Bitcoin</string>
+    <string name="start_doge_button">Doge</string>
+    <string name="start_maza_button">Mazacoin</string>
+    <string name="start_demo_button"><i>Demo</i></string>
+    <string name="splashUrl">www.cash2btc.com</string>
+    <string name="splashVersion">"Version: "</string>
+    <string name="welcome_instructions">Touch to Begin!</string>
+    <string name="dwelcome_instructions">Press START to buy Dogecoin.</string>
+    <string name="buttonScanQR">Scan QR</string>
+    <string name="image_description">Icon</string>
+    <string name="transaction_complete">Transaction complete.\n  Thank you!</string>
+    <string name="printer_off_line">Printer Offline.</string>
+    <string name="sessions_line1">Since </string>
+    <string name="sessions_line2">Bitcoins were sold in </string>
+    <string name="sessions_line3"> transactions.</string>
+
+    <!-- Buy Buttons -->
+    <string name="buy_bitcoin">Press to buy BITCOIN!</string>
+    <string name="buy_dogecoin">To The Moon!</string>
+    <string name="buy_mazacoin">Hoka hey! \nLets do this!</string>
+    <string name="buy_bitcoin_demo">Press to DEMO Bitcoin!</string>
+    <string name="buy_dogecoin_demo">To The Moon \nDEMO</string>
+    <string name="buy_mazacoin_demo">Hoka hey \nLets do this \nDEMO</string>
+
+    <!-- Menus -->
+    <string name="menu_log">Log</string>
+    <string name="menu_sessions">Sessions</string>
+    <string name="cancel">Cancel</string>
+    <!-- Strings related to Preferences data storeage -->
+    <string name="pref_owner_password">Password</string>
+    <string name="pref_owner_password_key">OwnerPassword</string>
+    <string name="pref_owner_password_summ">Redemption Password</string>
+    <string name="pref_redemption_password">Password</string>
+    <string name="pref_redemption_password_key">password</string>
+    <string name="pref_redemption_password_summ">Redemption Password</string>
+    <string name="pref_provider">Provider</string>
+    <string name="pref_redemption_provider_key">redemption_provider</string>
+    <string name="pref_redemption_provider_summ">Redemption Provider</string>
+    <string name="pref_redemption_current">Current Redemption Provider</string>
+    <string name="pref_redemption_current_key">current_provider</string>
+    <string name="pref_redemption_current_summ">Current Redemption Provider</string>
+    <string name="pref_owner_bc_password_key">bc account pwd1</string>
+    <string name="pref_owner_bc_password2_key">bc account pwd2</string>
+    <string name="pref_owner_bc_account_id_key">bc account id</string>
+    <string name="pref_owner_max_transaction_key">bc account max trans</string>
+    <string name="pref_owner_transaction_fee_key">bc account trans fee</string>
+    <string name="pref_lastUpdateTime">dave last update time</string>
+    <!-- Provider Settings Activity -->
+    <string name="title_activity_provider_settings">Provider Settings</string>
+    <string name="ServiceProvider_name">Redemption Provider Settings</string>
+    <string name="provider_instructions">Configure your Redemption Service Providers.</string>
+    <string name="provider_url_label">New Provider Address</string>
+    <string name="provider_url_hint">Enter the web address of the redemption service provider.</string>
+    <string name="provider_password_label">Password</string>
+    <string name="provider_password_hint">Enter the redemption service password.</string>
+    <string name="provider_done">Done</string>
+    <string name="provider_delete">Delete</string>
+    <!-- Address / Enter Phone Number Activity -->
+    <string name="phone_number_label">Phone Number:</string>
+    <string name="phone_number_hint">(xxx)-xxx-xxxx</string>
+    <string name="next_button">Next</string>
+    <string name="title_activity_address">Go Back</string>
+    <string name="title_activity_selection">Go Back</string>
+    <string name="phone_instructions">Welcome, Please Scan in your address</string>
+    <string name="dphone_instructions">wow, begin very riches...    for moon we need your Dogecoin address.    \n Please Scan in your address by pressing the Scan QR button.                     such thanks</string>
+    <string name="wphone_instructions">Thank you for choosing Mazacoin Legal tender for the sovereign Lakota Nation. to begin we need your Mazacoin address. Please Scan in your address by pressing the Scan QR button. </string>
+    <!-- <string name="title_activity_phone_number">Enter Phone Number</string> -->
+    <!-- <string name="phone_instructions">Welcome, to begin we need your bitcoin address. \n Please Scan in your address by pressing the \n Scan QR button If you using sms redemption \n please Enter Phone Number or leave blank</string> -->
+    <string name="address_hint"></string>
+    <!-- Session Provider -->
+    <string name="sessionProvider_name"> Session Provider</string>
+    <!-- Redemption Activity -->
+    <string name="qr_scan">SCAN ME</string>
+    <string name="redemption_label">REDEMPTION CODE</string>
+    <string name="redemption_instructions">To complete transaction: \n\t1. Scan this REDEMPTION CODE\n\t2. Send text message to (646) 350-0558 \n\t3. Paste (or type) redemption code.</string>
+    <string name="title_activity_buy_qr_">Redemption</string>
+    <string name="bc_redemption_instructions">Wait for the hash.</string>
+    <string name="bc_redemption_instructions2">Print the results or scan the QR code.</string>
+    <string name="redemption_hash_lable">Hash</string>
+    <string name="redemption_msg_lable">Message</string>
+    <string name="redemption_notice_lable">Notice</string>
+    <string name="print_button">Print</string>
+    <string name="result_button">Results</string>
+    <string name="redemption_progress">Sending order to provider.</string>
+    <!-- Buy Selection activity -->
+    <string name="select_info">Would you like to buy bitcoin? or would you like to sell</string>
+	<string name="Selection_label">Selection</string>
+    
+    <!-- Buy Screen activity -->
+    <string name="plan_b">Cash2BTC’s Bitcoin D.A.V.E.</string>
+    <string name="plan_d">Cash2BTC’s Dogecoin D.A.V.E.</string>
+    <string name="plan_w">Cash2BTC’s Mazacoin D.A.V.E.</string>
+    <string name="address_label">Address:</string>
+    <string name="session_label">Session:</string>
+    <string name="status_label">Status:</string>
+    <string name="bitcoin_label">Bitcoins:</string>
+    <string name="mazacoin_label">Mazacoins:</string>
+    <string name="dogecoin_label">Dogecoins:</string>
+    <string name="exchange_rate_label">Price:</string>
+     <string name="exchange_fee_label">Fee:</string>
+    <string name="tendered_lable">Tendered:</string>
+    <string name="address_value">1xxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="tendered_value">0</string>
+    <string name="status_value">READY</string>
+    <string name="session_value">A123</string>
+    <string name="total_value">0</string>
+    <string name="buy_now"> Press to buy BITCOIN! </string>
+    <string name="dbuy_now"> To The MOON! </string>
+    <string name="wbuy_now"> Hoka Hey! </string>
+    <string name="cancel_button">Cancel</string>
+    <string name="change_address_menu">Change Address</string>
+    <string name="buy_instructions">Insert Cash Now!</string>
+    <string name="sell_instructions">To begin, Select how much bitcoin you would like to sell. (In USD)\n Must be multiple of 20!</string>
+    <string name="title_activity_buy_screen">Buy Bitcoin</string>
+    <string name="title_activity_sell_screen">Sell Bitcoin</string>
+    <string name="maximum_funds_available_label">Maximum \nTransaction</string>
+    <!-- Log Activity -->
+    <string name="title_activity_log_view">Session Log</string>
+    <!-- Login Activity - see separate file -->
+
+
+    <!-- Owner Doge Fragment -->
+    <string name="owner_common_title">Common</string>
+    <string name="owner_sessions_title">Sessions</string>
+    <string name="owner_doge_title">DogeAPI</string>
+    <string name="owner_doge_instructions">Set you DogeAPI account information. All we need is your ApiKey from your DogeAPI wallet settings.</string>
+    <string name="owner_doge_account_hint">All we need is you ApiKey from your DogeAPI wallet settings.</string>
+    <string name="owner_doge_account_label">DogeAPI api_key</string>
+    <string name="test_doge_account">TEST SETTINGS</string>
+    <string name="owner_doge_max_label">Maximum Transaction Allowed</string>
+    <string name="owner_doge_max_hint">Largest transaction allowed</string>
+    <string name="owner_doge_balance_label">DogeAPI Balance</string>
+    <string name="owner_doge_balance_initial"><i>Press TEST to lookup balance</i></string>
+
+    <!-- common owner fragment -->
+    <string name="owner_currency_label"> Select Currency</string>
+    <string name="owner_symbol_label"> Select Symbol from Android locales</string>
+    <string name="owner_bills_label"> Set Bill Vaules</string>
+    <string name="owner_bill1_label"> Bill 1</string>
+    <string name="owner_bill2_label"> Bill 2</string>
+    <string name="owner_bill3_label"> Bill 3</string>
+    <string name="owner_bill4_label"> Bill 4</string>
+    <string name="owner_bill5_label"> Bill 5</string>
+    <string name="owner_bill6_label"> Bill 6</string>
+    <string name="owner_bill7_label"> Bill 7</string>
+    
+    <string name="owner_bill1_hint">1</string>
+    <string name="owner_bill2_hint">2</string>
+    <string name="owner_bill3_hint">3</string>
+    <string name="owner_bill4_hint">4</string>
+    <string name="owner_bill5_hint">5</string>
+    <string name="owner_bill6_hint">6</string>
+    <string name="owner_bill7_hint">7</string>
+    
+    <string name="owner_password2_hint">The new password again.</string>
+    <string name="owner_password2_label"> Password</string>
+    <string name="owner_password1_hint">The new password.</string>
+    <string name="owner_password1_label"> Password</string>
+    <string name="owner_common_instructions">Set your D.A.V.E. account information.</string>
+    <string name="owner_kiosk_label">Kiosk Controls.</string>
+    <string name="owner_fees_label">Service Fee Collection.</string>
+    <string name="owner_primary_checkbox">Set as primary bitcoin account.</string>
+    <string name="owner_payout_button">Payout</string>
+    <string name="owner_payout_instructions">Payout will save these sessions to a file and pay the DAVE supplier.</string>
+    <!-- Owner Blockchain Activity -->
+    <string name="owner_bc_title">Blockchain</string>
+    <string name="title_activity_initialize">D.A.V.E. Configuration</string>
+    <string name="owner_instructions">Set your Blockchain account information.</string>
+    <string name="owner_dave_password_hint">Password used to reach this screen.</string>
+    <string name="owner_dave_password_label">D.A.V.E. Login Password</string>
+    <string name="owner_bc_password2_hint">The optional second password. If set on Blockchain it will be required when you send funds from your account.</string>
+    <string name="owner_bc_password2_label">Second Password</string>
+    <string name="owner_bc_password1_hint">Primary password for your Blockchain account.</string>
+    <string name="owner_bc_password1_label">Main Password</string>
+    <string name="owner_bc_account_hint">The Identifier which is displayed when logging into your Blockchain account.</string>
+    <string name="owner_bc_account_label">Blockchain Identifier</string>
+    <string name="scan_bc_account">Scan</string>
+    <string name="print_bc_account">Print</string>
+    <string name="owner_bc_max_label">Maximum Transaction Allowed</string>
+    <string name="owner_bc_max_hint">Largest transaction allowed</string>
+    <string name="test_bc_account">TEST SETTINGS</string>
+    <string name="owner_bc_balance_label">Blockchain Balance</string>
+    <string name="owner_bc_balance_initial"><i>Press TEST to lookup</i></string>
+    <string name="owner_transaction_fee_label">Transaction Fee: </string>
+    <string name="owner_transaction_fee_hint">Percentage taken from every sale.</string>
+
+    <!-- Owner Cointrader Fragment -->
+    <string name="owner_ct_title">Cointrader.net</string>
+    <string name="owner_ct_instructions">Scan your Coin Trader account information.</string>
+    <string name="owner_ct_private_key">Private key.</string>
+    <string name="owner_ct_private_key_hint">Checked when the private key is known.</string>
+    <string name="owner_ct_public_key_hint">The public key.</string>
+    <string name="owner_ct_public_key_label">Public Key</string>
+    <string name="owner_ct_password_hint">Password for your account.</string>
+    <string name="owner_ct_password_label">Password</string>
+    <string name="owner_ct_account_hint">The user name used when logging into your account.</string>
+    <string name="owner_ct_account_label">User Name</string>
+    <string name="scan_ct_account">Scan</string>
+    <string name="print_ct_account">Print</string>
+    <string name="owner_ct_max_label">Maximum Transaction Allowed</string>
+    <string name="owner_ct_max_hint">Largest transaction allowed</string>
+    <string name="test_ct_account">TEST SETTINGS</string>
+    <string name="owner_ct_balance">Bitcoin</string>
+    <string name="owner_ct_balance_maza">Mazacoin</string>
+    <string name="owner_ct_balance_label">Balance:</string>
+    <string name="owner_ct_balance_initial"><i>Press TEST to lookup</i></string>
+    <string name="owner_ct_price_button">Change Price</string>
+
+    <!-- Owner activity -->
+    <string name="redemption_api_key_label">Redemption API Key</string>
+    <string name="redemption_api_key_hint">Enter your redemption service provider API key here.</string>
+    <string name="change_redemption_key_button">Change Password</string>
+    <string name="clear_sessions_button">Remove All Sessions</string>
+    <string name="session_total_label">Total value of all sessions</string>
+    <string name="authorization_label">Authorization</string>
+    <string name="authorization_value">downloading</string>
+    <string name="done_button">DONE</string>
+    <string name="exit_button">Exit Dave App</string>
+    <string name="buttonScanKeyQR">Scan</string>
+    <string name="change_password_button">Change Owner Password</string>
+    <string name="owner_password_hint">Enter new password here</string>
+    <!-- Session Activity -->
+    <string name="title_activity_session">Sessions</string>
+    <string name="delete_button">Delete ALL</string>
+    <string name="session_intro">List of all sessions.</string>
+    <!-- Settings - see strings_activity_settings.xml -->
+<!--  Test array  -->
+ <string-array name="list_of_countries">
+      <item >USA</item>
+      <item >Uk</item>
+      <item >Canada</item>
+      <item >Australia</item>
+      <item >France</item>
+      <item >Italy</item>
+      <item >China</item>
+      <item >Japan</item>
+      <item >Spain</item>
+      </string-array>
+
+   
+    <string name="hello_world">Hello world!</string>
+   
+	<string name="no_items">No items!</string>
+	
+	<string-array name="android_names">
+	    <item>test 1</item>
+	    <item>test 2</item>
+	    <item>test 3</item>
+	    <item>test 4</item>
+	</string-array>
+	<string name="title">ERROR!</string>
+	<string name="error_message">This was an error getting JSON data was null</string>
+	
+	
+	<!--  Printer/wallet merge -->	
+	
+    <string name="selpicture">Select Picture to Print&#8230;</string>
+    <string name="printpicture">Print Picture</string>
+    <string name="printtext">Print Text</string>
+    <string name="sampletext">*** Text ***</string>
+    <string name="exit">EXIT</string>
+    
+    <string name="stsNoPaper">No Paper</string>
+    <string name="stsRolling">Paper Rolling</string>
+    <string name="stsLF">LF Key Pressed</string>
+    
+    <string name="TextDevices">Devices List:</string>
+    <string name="TextPrintPicture">Picture:</string>
+    <string name="TextPrintText">Text:</string>
+    <string name="TextStatus">Printer Status:</string>
+    
+    
+    
+    
+   
+    <string name="generating">Generating bitcoin address…</string>
+    <string name="decoding">Decoding private key…</string>
+    <string name="generate_button">Generate another</string>
+    <string name="private_key_desc">Private key below can be used to spend money from the bitcoin address above. Write
+        it down and keep in safe place, then generate another address to clean it.
+    </string>
+    <string name="generating_failed">Unable to generate a key, sorry.</string>
+    <string name="bad_private_key">Unable to decode private key</string>
+    <string name="raw_tx_description_header">Now you can spend some coins from %1$s.</string>
+    <string name="raw_tx_description">Paste hex-encoded raw transaction which have unspent outputs for the address. %1$s\n\nOr copy-paste %2$s from blockchain.info (application doesn\'t have access to internet to get it automatically):</string>
+    <string name="raw_tx_description_wut_link">What?</string>
+    <string name="raw_tx_description_json_link">json with unspent outputs</string>
+    <string name="raw_tx_description_wut">1) Using blockchain.info or blockexplorer.com go to the address details and find hash of a transaction.\n2) Get the raw transaction in bitcoin-qt using <i>getrawtransaction [hash]</i> command and send it to phone.\n(You may need to start bitcoin-qt from command line with <i>\'-txindex 1\'</i> for that).</string>
+    <string name="error_unable_to_decode_transaction">Unable to decode given transaction</string>
+    <string name="error_failed_to_create_transaction">Error creating transaction - for some unknown reason generated transaction contained an error.</string>
+    <string name="spend_tx_description">Transaction below will transfer %1$s BTC from %2$s to %3$s. Transaction fee is %4$s BTC.</string>
+    <string name="spend_tx_with_change_description">Transaction below will transfer %1$s BTC from %2$s to %3$s. Transaction fee is %4$s BTC. Change of %5$s BTC will go to %2$s.</string>
+    <string name="input_tx_is_old_enough">Input transaction already have more than %1$s. (Is older than ~%2$s)</string>
+    <string name="tx_size_too_big_to_be_free">Not eligible for free processing because TX size is too big: %1$d bytes.</string>
+    <string name="tx_output_is_too_small">Not eligible for free processing because output %1$s BTC is less than %2$s BTC.</string>
+    <string name="spend_tx_warning_footer">You can push it with sendrawtransaction bitcoin-qt command. And again, I have no responsibility if
+        something will go wrong. The app was carefully tested and transaction was verified, but no one can give any
+        warranties that it is bug-free, so use it on your own risk and verify tx\'s output carefully before pushing it.
+    </string>
+    <string name="raw_tx_hint">Unspent transactions info</string>
+    <string name="recipient_address_hint">Receiving address</string>
+    <string name="enter_your_private_key">Scan or paste your private key to spend some coins from paper wallet!</string>
+    <string name="spend_tx_hint">Generating transaction…</string>
+    <string name="invalid_address">Invalid address</string>
+    <string name="private_key_type">Private key type: %1$s</string>
+    <string name="amount_hint">BTC</string>
+    <string name="error_amount_parsing">Invalid amount</string>
+    <string name="error_not_enough_funds">Requested amount is bigger than available balance minus fee.</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="menu_preferences">Preferences</string>
+    <string name="setting_private_key_type">Private key type to generate</string>
+    <string name="preference_extra_fee">Extra fee</string>
+    <string name="scan_title">Scanning…</string>
+    <string name="scan">Scan…</string>
+    <string name="paste">Paste…</string>
+    <string name="push_tx_label">Copy transaction and open blockchain.info/pushtx…</string>
+    <string name="tx_description_for_clipboard">Send %1$s BTC to %2$s</string>
+    <string name="hint_password">Password</string>
+    <string name="encrypt_private_key">Encrypt private key</string>
+    <string name="not_decrypted_yet">Not decrypted yet</string>
+    <string name="decrypt_private_key">Decrypt private key</string>
+    <string name="ime_encrypt">Encrypt</string>
+    <string name="ime_decrypt">Decrypt</string>
+    <string name="decrypted">Decrypted</string>
+    <string name="encrypted">Encrypted</string>
+    <string name="decrypting">Decrypting…</string>
+    <string name="encrypting">Encrypting…</string>
+    <string name="incorrect_password">Incorrect password.</string>
+    <string name="error_oom_bip38">Oops! The BIP38 requires more than 16 MB of free RAM memory and looks like your phone cannot give that much, sorry.</string>
+    <string name="error_no_spendable_outputs_found">No spendable standard outputs for %s have found</string>
+    <string name="unable_open_camera">Unable to open camera</string>
+    <string name="qr_code_desc">QR code</string>
+    <string name="print">Print</string>
+    <string name="private_key_for">Private key for %s</string>
+    <string name="share">Share</string>
+    <string name="share_chooser_title">SEND TO (warning, it\'s insecure)</string>
+    <string name="output_address_same_as_input">Output address is same as input address - it\'s likely a mistake.</string>
+    <string name="generated_tx_have_too_big_fee">Generated transaction have suspiciously big fee. Please report to developer.</string>
+    <string name="json_err_no_unspent_outputs">\"unspent_outputs\" array wasn\'t found</string>
+    <string name="error_unable_to_decode_json_transaction">Unable to decode this JSON.\n%s</string>
+
+    <string-array name="private_keys_types">
+        <item>wallet import format</item>
+        <item>mini</item>
+        <item>brain wallet, not compressed public key</item>
+        <item>brain wallet, compressed public key</item>
+        <item>BIP 38 (password protected)</item>
+    </string-array>
+
+    <string-array name="private_keys_types_to_generate_labels">
+        <item>Mini</item>
+        <item>Wallet import format</item>
+        <item>Old WIF</item>
+    </string-array>
+
+    <string-array name="private_keys_types_to_generate" tools:ignore="MissingTranslation">
+        <item>mini</item>
+        <item>wif_compressed</item>
+        <item>wif_not_compressed</item>
+    </string-array>
+
+    <string-array name="private_keys_types_for_qr">
+        <item>Mini</item>
+        <item>WIF</item>
+        <item>Encrypted</item>
+    </string-array>
+
+    <plurals name="confirmations">
+        <item quantity="one">1 confirmation</item>
+        <item quantity="other">%d confirmations</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="one">1 hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+
+    <plurals name="days">
+        <item quantity="one">1 day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+	
+	
 
 </resources>

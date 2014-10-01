@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OwnerActivity" >
+
+    <TextView
+        android:id="@+id/owner_common_instructions"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_payout_instructions" />
+
+    <LinearLayout
+        android:id="@+id/col1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_common_instructions"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/owner_label1"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label label label" />
+
+        <TextView
+            android:id="@+id/owner_label2"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label3"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label4"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label5"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label6"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label7"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label8"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label9"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label10"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="label" />
+
+        <TextView
+            android:id="@+id/owner_label11"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/owner_label12"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/owner_label13"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_common_instructions"
+        android:layout_toRightOf="@id/col1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/owner_value1"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value2"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value3"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value4"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value5"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value6"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value7"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value8"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value9"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value10"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/owner_value11"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/owner_value12"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/owner_value13"
+            style="@style/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/col1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/payout_button"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_payout_button" />
+
+        <Button
+            android:id="@+id/payout_done_button"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/done_button" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/owner_session_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/payout_buttons"
+        android:layout_marginTop="15dp" >
+    </ListView>
+
+</RelativeLayout>

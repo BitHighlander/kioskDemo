@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="@string/pref_redemption_password_key"
+        android:summary="@string/pref_redemption_password_summ"
+        android:title="@string/pref_redemption_password" />
+    <EditTextPreference
+        android:key="@string/pref_redemption_current_key"
+        android:summary="@string/pref_redemption_current_summ"
+        android:title="@string/pref_redemption_current" />
+
+    <ListPreference
+        android:entries="@array/redemptionProviders"
+        android:entryValues="@array/redemptionProvidersValues"
+        android:key="@string/pref_redemption_provider_key"
+        android:summary="@string/pref_redemption_provider_summ"
+        android:title="@string/pref_provider" />
+
+</PreferenceScreen>
