@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
@@ -81,7 +82,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
      if (count==10) {
     	 	// Start login
-    	 //startLoginActivity();
+    	 startLoginActivity();
     	 
     	 Log.d(TAG, "Admin button pressed");
      }
@@ -171,8 +172,44 @@ private void startSessionsActivity() {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+       
+//******** get screen deminsion and display accordingly
 
+        
+        int screenSize = getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK;
+
+        String toastMsg;
+        switch(screenSize) {
+        	case Configuration.SCREENLAYOUT_SIZE_XLARGE:
+        		setContentView(R.layout.activity_main_xlarge);
+        		Log.d(TAG, "Xtra Large screen");
+        		toastMsg = "Xtra Large screen";
+        		break;
+        	case Configuration.SCREENLAYOUT_SIZE_LARGE:
+        		setContentView(R.layout.activity_main_large);
+        		Log.d(TAG, "Large screen");
+                toastMsg = "Large screen";
+                break;
+            case Configuration.SCREENLAYOUT_SIZE_NORMAL:
+            	setContentView(R.layout.activity_main_normal);
+            	Log.d(TAG, "Normal screen");
+                toastMsg = "Normal screen";
+                break;
+            case Configuration.SCREENLAYOUT_SIZE_SMALL:
+            	setContentView(R.layout.activity_main_small);
+            	Log.d(TAG, "Small screen");
+                toastMsg = "Small screen";
+                break;
+            default:
+                toastMsg = "Screen size is neither large, normal or small";
+        }
+        Toast.makeText(this, toastMsg, Toast.LENGTH_LONG).show();
+
+//        
+        
+        
+        
         //Kiosk Mode
         View mDecorView = getWindow().getDecorView();
         mDecorView.setSystemUiVisibility(
